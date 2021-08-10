@@ -17,3 +17,9 @@ buttonNumber.forEach(button=> {
         display.agregarNumero(button.innerHTML);
     });
 });
+
+buttonOperator.forEach( button => {
+    button.addEventListener('click', () => {
+        display.computar(button.value);
+    })
+})
